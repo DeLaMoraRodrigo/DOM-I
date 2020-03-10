@@ -40,3 +40,67 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Nav
+document.querySelector("a:nth-of-type(1)").textContent = siteContent["nav"]["nav-item-1"];
+document.querySelector("a:nth-of-type(2)").textContent = siteContent["nav"]["nav-item-2"];
+document.querySelector("a:nth-of-type(3)").textContent = siteContent["nav"]["nav-item-3"];
+document.querySelector("a:nth-of-type(4)").textContent = siteContent["nav"]["nav-item-4"];
+document.querySelector("a:nth-of-type(5)").textContent = siteContent["nav"]["nav-item-5"];
+document.querySelector("a:nth-of-type(6)").textContent = siteContent["nav"]["nav-item-6"];
+
+const godzilla = document.createElement("a");
+godzilla.href = "#";
+godzilla.textContent = "GODZILLA";
+
+const ghidora = document.createElement("a");
+ghidora.href = "#";
+ghidora.textContent = "GHIDORA";
+
+document.querySelector("nav").appendChild(godzilla);
+document.querySelector("nav").appendChild(ghidora);
+
+document.querySelectorAll("nav a").forEach(val => {val.style.color = "green"});
+
+//CTA
+document.querySelector(".cta-text h1").textContent = siteContent["cta"]["h1"];
+document.querySelector(".cta-text h1").style.fontSize = "10rem";
+document.querySelector(".cta-text button").textContent = siteContent["cta"]["button"];
+document.querySelector(".cta-text button").style.backgroundColor = "pink";
+document.querySelector(".cta-text button").style.height = "10vh";
+document.querySelector(".cta-text button").style.width = "50%";
+document.querySelector(".cta-text button").style.fontSize = "2.8rem";
+document.querySelector(".cta-text button").style.fontWeight = "bold";
+document.querySelector("#cta-img").src = siteContent["cta"]["img-src"];
+
+//Main Content
+document.querySelector(".top-content .text-content:nth-of-type(1) h4").textContent = siteContent["main-content"]["features-h4"];
+document.querySelector(".top-content .text-content:nth-of-type(1) p").textContent = siteContent["main-content"]["features-content"];
+document.querySelector(".top-content .text-content:nth-of-type(1) ").style.backgroundColor = "#f6ff00";
+
+document.querySelector(".top-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["about-h4"];
+document.querySelector(".top-content .text-content:nth-of-type(2) p").textContent = siteContent["main-content"]["about-content"];
+document.querySelector(".top-content .text-content:nth-of-type(2) ").style.backgroundColor = "#47d4ff";
+
+document.querySelector("#middle-img").src = siteContent["main-content"]["middle-img-src"];
+
+document.querySelector(".bottom-content .text-content:nth-of-type(1) h4").textContent = siteContent["main-content"]["services-h4"];
+document.querySelector(".bottom-content .text-content:nth-of-type(1) p").textContent = siteContent["main-content"]["services-content"];
+document.querySelector(".bottom-content .text-content:nth-of-type(1) ").style.backgroundColor = "#07f246";
+
+document.querySelector(".bottom-content .text-content:nth-of-type(2) h4").textContent = siteContent["main-content"]["product-h4"];
+document.querySelector(".bottom-content .text-content:nth-of-type(2) p").textContent = siteContent["main-content"]["product-content"];
+document.querySelector(".bottom-content .text-content:nth-of-type(2) ").style.backgroundColor = "orange";
+
+document.querySelector(".bottom-content .text-content:nth-of-type(3) h4").textContent = siteContent["main-content"]["vision-h4"];
+document.querySelector(".bottom-content .text-content:nth-of-type(3) p").textContent = siteContent["main-content"]["vision-content"];
+document.querySelector(".bottom-content .text-content:nth-of-type(3) ").style.backgroundColor = "#e345ff";
+
+//Contact
+document.querySelector(".contact h4").textContent = siteContent["contact"]["contact-h4"];
+document.querySelector(".contact p:nth-of-type(1)").textContent = siteContent["contact"]["address"];
+document.querySelector(".contact p:nth-of-type(2)").textContent = siteContent["contact"]["phone"];
+document.querySelector(".contact p:nth-of-type(3)").textContent = siteContent["contact"]["email"];
+
+//Footer
+document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];
